@@ -8,10 +8,31 @@
 }
 
 .main {
-    background-color: hsl(212, 45%, 89%);
+    background-color: hsl(47, 88%, 63%);
     min-height: 100vh;
     min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    height: 60vh;
+    width: 35vw;
+    background-color: white;
+    border-radius: 5%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-image: url("./assets/images/illustration-article.svg");
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Keeps the image centered */
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
 }
