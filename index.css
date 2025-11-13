@@ -35,7 +35,7 @@
     height: 45%;
     width: 100%;
     border-radius: 4%;
-    margin: 0px 0px 20px 0%;
+    margin: 0px 0px 10px 0%;
 
 }
 
@@ -61,4 +61,22 @@
 .para {
     margin: 5px 5px 5px 5px;
     font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 5px 5px 5px;
+    height: 12%;
+    width: 76%;
+}
+
+.icon {
+    background-image: url("./assets/images/image-avatar.webp");
+    height: 100%;
+    width: 20%;
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Keeps the image centered */
 }
