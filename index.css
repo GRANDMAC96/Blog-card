@@ -18,12 +18,13 @@
 
 .card {
     height: 60vh;
-    width: 35vw;
+    width: 27vw;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 12px 12px 12px 12px;
     padding: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 3px 3px 3px;
 }
 
 .image {
@@ -34,7 +35,7 @@
     /* Keeps the image centered */
     height: 45%;
     width: 100%;
-    border-radius: 4%;
+    border-radius: 12px 12px 12px 12px;
     margin: 0px 0px 10px 0%;
 
 }
@@ -50,6 +51,7 @@
 
 .header2 {
     margin: 5px 5px 5px 5px;
+    font-size: 10px;
 
 }
 
@@ -74,9 +76,27 @@
 .icon {
     background-image: url("./assets/images/image-avatar.webp");
     height: 100%;
-    width: 20%;
-    background-size: cover;
-    /* Ensures the image covers the entire area */
+    width: 25%;
+    background-size: contain;
+    /* Ensures the image covers the entire area and that there is no cropping which is essential*/
     background-position: center;
     /* Keeps the image centered */
+    background-repeat: no-repeat;
+    /* Using contain as the property value of background-size means the image is duplicated if it doesn't fully 
+    "contain" the container. This property with stop the repeating of the image */
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    padding: 0px 0px 0px 5px;
+}
+@media (0px <= width <= 385px) { 
+    .card {
+        width: 75vw;
+    }
+    .footer {
+        width: 100%;
+    }
 }
